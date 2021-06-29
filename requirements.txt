@@ -1,9 +1,9 @@
-# requirements are only sentence-transformers; pykeen. This file has been generated
-# using the command `pip freeze > requirements.txt`.
-
 alembic==1.6.5
+appdirs==1.4.4
 attrs==21.2.0
+black==21.6b0
 certifi==2021.5.30
+cfgv==3.3.0
 chardet==4.0.0
 class-resolver==0.0.12
 click==8.0.1
@@ -13,27 +13,39 @@ cmaes==0.8.2
 cmd2==2.1.1
 colorama==0.4.4
 colorlog==5.0.1
+cycler==0.10.0
 dataclasses-json==0.5.4
+distlib==0.3.2
 docdata==0.0.3
 filelock==3.0.12
+flake8==3.9.2
 greenlet==1.1.0
 huggingface-hub==0.0.12
+identify==2.2.10
 idna==2.10
 joblib==1.0.1
+kiwisolver==1.3.1
 Mako==1.1.4
 MarkupSafe==2.0.1
 marshmallow==3.12.1
 marshmallow-enum==1.5.1
+matplotlib==3.4.2
+mccabe==0.6.1
 more-click==0.0.4
 mypy-extensions==0.4.3
 nltk==3.6.2
+nodeenv==1.6.0
 numpy==1.21.0
 optuna==2.8.0
 packaging==20.9
 pandas==1.2.5
+pathspec==0.8.1
 pbr==5.6.0
 Pillow==8.2.0
+pre-commit==2.13.0
 prettytable==2.1.0
+pycodestyle==2.7.0
+pyflakes==2.3.1
 pykeen==1.5.0
 pyparsing==2.4.7
 pyperclip==1.8.2
@@ -47,6 +59,7 @@ requests==2.25.1
 sacremoses==0.0.45
 scikit-learn==0.24.2
 scipy==1.7.0
+seaborn==0.11.1
 sentence-transformers==2.0.0
 sentencepiece==0.1.96
 six==1.16.0
@@ -57,6 +70,7 @@ stringcase==1.2.0
 tabulate==0.8.9
 threadpoolctl==2.1.0
 tokenizers==0.10.3
+toml==0.10.2
 torch==1.9.0
 torchvision==0.10.0
 tqdm==4.61.1
@@ -64,4 +78,5 @@ transformers==4.8.1
 typing-extensions==3.10.0.0
 typing-inspect==0.7.1
 urllib3==1.26.6
+virtualenv==20.4.7
 wcwidth==0.2.5
