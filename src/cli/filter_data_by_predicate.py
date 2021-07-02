@@ -1,6 +1,7 @@
 import pandas as pd
 import click
 from log import get_logger
+from utils import load_triples_from_tsv
 
 logger = get_logger(__name__)
 
@@ -12,9 +13,7 @@ logger = get_logger(__name__)
 def filter_triples_tsv_by_predicates(
     input_path: str, output_path: str, predicate_filter_path: str
 ):
-    triples = pd.read_csv(
-        input_path, sep="\t", names=["subject", "predicate", "object"]
-    )
+    triples = load_triples_from_tsv(input_path)
     predicate_filter = pd.read_csv(predicate_filter_path)
     predicates_keep = predicate_filter.loc[
         predicate_filter["keep"] == 1, "predicate"
