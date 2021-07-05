@@ -44,10 +44,10 @@ from utils import get_timestamp, triplesfactory_from_tsv
 @click.option(
     "--from_checkpoint",
     type=click.Path(exists=True, dir_okay=False),
-    default=None,
+    required=False,
     help="Path to load a checkpoint from, and start training at that checkpoint. See https://pykeen.readthedocs.io/en/stable/tutorial/checkpoints.html.",
 )
-@click.option("--save_checkpoint/--no_save_checkpoint", is_flag=True, default=False)
+@click.option("--save_checkpoint/--no_save_checkpoint", is_flag=True, default=True)
 def main(
     input_data_path,
     output_path,
