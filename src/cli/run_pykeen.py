@@ -1,11 +1,11 @@
 import click
 from pykeen.pipeline import pipeline_from_config
-from pykeen.triples import TriplesFactory
 import matplotlib.pyplot as plt
 import numpy as np
 import os
 import json
-from utils import get_timestamp
+import pathlib
+from utils import get_timestamp, triplesfactory_from_tsv
 
 
 @click.command()
@@ -41,7 +41,23 @@ from utils import get_timestamp
 )
 @click.option("--plot_losses/--no_plot_losses", is_flag=True, default=True)
 @click.option("-s", "--random_seed", type=int, default=100)
-def main(input_data_path, output_path, config_path, gpu, plot_losses, random_seed):
+@click.option(
+    "--from_checkpoint",
+    type=click.Path(exists=True, dir_okay=False),
+    default=None,
+    help="Path to load a checkpoint from, and start training at that checkpoint. See https://pykeen.readthedocs.io/en/stable/tutorial/checkpoints.html.",
+)
+@click.option("--save_checkpoint/--no_save_checkpoint", is_flag=True, default=False)
+def main(
+    input_data_path,
+    output_path,
+    config_path,
+    gpu,
+    plot_losses,
+    random_seed,
+    from_checkpoint,
+    save_checkpoint,
+):
 
     # Load config and add data paths and device to the metadata that are stored with the model
     with open(config_path, "r") as f:
@@ -58,9 +74,35 @@ def main(input_data_path, output_path, config_path, gpu, plot_losses, random_see
     )
 
     # Run model and save to output directory
-    tf = TriplesFactory.from_path(input_data_path, create_inverse_triples=False)
+    tf = triplesfactory_from_tsv(input_data_path, create_inverse_triples=False)
+
+    if save_checkpoint:
+        checkpoint_dir = "./data/checkpoints"
+        checkpoint_name = f"{config['metadata']['title']}.pt"
+
+    if from_checkpoint:
+        path = pathlib.Path(from_checkpoint)
+        checkpoint_dir, checkpoint_name = path.parent, path.name
+
+    if from_checkpoint or save_checkpoint:
+        if "training_kwargs" in config["pipeline"].keys():
+            config["pipeline"]["training_kwargs"].update(
+                {
+                    "checkpoint_name": checkpoint_name,
+                    "checkpoint_directory": checkpoint_dir,
+                }
+            )
+        else:
+            config["pipeline"]["training_kwargs"] = {
+                "checkpoint_name": checkpoint_name,
+                "checkpoint_directory": checkpoint_dir,
+            }
+
     pipeline_kwargs = dict(
-        training=tf, testing=tf, device="gpu" if gpu else "cpu", random_seed=random_seed
+        training=tf,
+        testing=tf,
+        device="gpu" if gpu else "cpu",
+        random_seed=random_seed,
     )
 
     results = pipeline_from_config(config, **pipeline_kwargs)
