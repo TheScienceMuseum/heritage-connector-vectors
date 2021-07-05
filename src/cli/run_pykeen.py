@@ -36,8 +36,8 @@ from utils import get_timestamp, triplesfactory_from_tsv
 @click.option(
     "--gpu/--cpu",
     is_flag=True,
-    default=False,
-    help="Specify device to train on. Default is CPU; to train on GPU, pass `--gpu`.",
+    default=True,
+    help="Specify device to train on. Default is GPU; to train on CPU, pass `--cpu`.",
 )
 @click.option("--plot_losses/--no_plot_losses", is_flag=True, default=True)
 @click.option("-s", "--random_seed", type=int, default=100)
