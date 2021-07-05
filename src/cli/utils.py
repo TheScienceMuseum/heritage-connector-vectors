@@ -1,5 +1,6 @@
 import time
 import pandas as pd
+from pykeen.triples import TriplesFactory
 
 
 def get_timestamp():
@@ -26,3 +27,13 @@ def load_triples_from_tsv(input_path: str) -> pd.DataFrame:
     )
 
     return triples
+
+
+def triplesfactory_from_tsv(input_path, **triplesfactory_kwargs) -> TriplesFactory:
+    """
+    Create a `pykeen.triples.TriplesFactory` from a TSV. More reliable than `TriplesFactory.from_file` for our data.
+    """
+
+    triples = load_triples_from_tsv(input_path).astype(str).values
+
+    return TriplesFactory.from_labeled_triples(triples, **triplesfactory_kwargs)
