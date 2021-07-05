@@ -113,10 +113,10 @@ def main(
     rel_representations = results.model.relation_representations
 
     with open(os.path.join(output_path, "entity_embeddings.npy"), "wb") as f:
-        np.save(f, ent_representations[0](indices=None).detach().numpy())
+        np.save(f, ent_representations[0](indices=None).detach().cpu().numpy())
 
     with open(os.path.join(output_path, "relation_embeddings.npy"), "wb") as f:
-        np.save(f, rel_representations[0](indices=None).detach().numpy())
+        np.save(f, rel_representations[0](indices=None).detach().cpu()().numpy())
 
     more_than_one_representation_message = (
         lambda ent_or_relation: f"There is more than one {ent_or_relation} representation for the trained model (see https://pykeen.readthedocs.io/en/stable/tutorial/first_steps.html?highlight=embedding#using-learned-embeddings). You may want to inspect the others by loading the PyTorch model using the model pickle."
