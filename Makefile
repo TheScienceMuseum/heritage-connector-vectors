@@ -6,12 +6,16 @@ init:
 	pre-commit install && pre-commit autoupdate
 
 clean:
-	rm -f ./data/interim/*
+	rm -rf ./data/interim/*
 
-interim: ./data/interim/triples_filtered_by_predicate.csv ./data/interim/triples_filtered_by_predicate_small.csv
+interim: ./data/interim/train_test_split/train.csv ./data/interim/train_test_split/test.csv ./data/interim/train_test_split/val.csv
+# ./data/interim/triples_filtered_by_predicate.csv ./data/interim/triples_filtered_by_predicate_small.csv
 
 ./data/interim/triples_filtered_by_predicate.csv: ./data/raw/hc_dump_latest.csv ./config/predicate_filter.csv
 	python src/cli/filter_data_by_predicate.py -i ./data/raw/hc_dump_latest.csv -o ./data/interim/triples_filtered_by_predicate.csv -p ./config/predicate_filter.csv
 
 ./data/interim/triples_filtered_by_predicate_small.csv: ./data/interim/triples_filtered_by_predicate.csv
 	python src/cli/make_smaller_triples.py -i $< -o $@ -k 0.22
+
+./data/interim/train_test_split/train.csv ./data/interim/train_test_split/test.csv ./data/interim/train_test_split/val.csv: ./data/interim/triples_filtered_by_predicate_small.csv
+	python src/cli/train_test_split.py -i $< -o ./data/interim/train_test_split --sizes 0.96,0.02,0.02 --random_state 42

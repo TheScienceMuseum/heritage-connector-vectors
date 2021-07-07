@@ -8,8 +8,10 @@ logger = get_logger(__name__)
 
 
 @click.command()
-@click.option("-i", "--input_path", required=True)
-@click.option("-o", "--output_path", required=True)
+@click.option(
+    "-i", "--input_path", type=click.Path(dir_okay=False, exists=True), required=True
+)
+@click.option("-o", "--output_path", type=click.Path(dir_okay=False), required=True)
 @click.option("-k", "--keep_subjects_proportion", type=float, required=True)
 @click.option("-r", "--random_state", type=int, default=100)
 def make_smaller_triples(
