@@ -14,7 +14,7 @@ http://www.w3.org/2000/01/rdf-schema#label,0
 http://www.w3.org/2001/XMLSchema#additionalType,1
 http://www.w3.org/2001/XMLSchema#description,0
 http://www.w3.org/2002/07/owl#sameAs,1
-http://www.w3.org/2004/02/skos/core#hasTopConcept,1
+http://www.w3.org/2004/02/skos/core#hasTopConcept,0
 http://www.w3.org/2004/02/skos/core#related,1
 http://www.w3.org/2004/02/skos/core#relatedMatch,1
 http://www.wikidata.org/prop/direct/P101,1
@@ -101,7 +101,7 @@ http://xmlns.com/foaf/0.1/maker,1
 http://xmlns.com/foaf/0.1/page,1
 http://xmlns.com/foaf/0.1/title,0
 https://schema.org/addressCountry,1
-https://schema.org/author,1
+https://schema.org/author,0
 https://schema.org/birthDate,0
 https://schema.org/birthPlace,1
 https://schema.org/dateCreated,0
