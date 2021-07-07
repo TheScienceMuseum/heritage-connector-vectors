@@ -1,6 +1,6 @@
 import os
 import click
-import numpy as np
+import pandas as pd
 from log import get_logger, DisableLogger
 from utils import triplesfactory_from_tsv
 
@@ -39,18 +39,18 @@ def run_train_test_split(input_path, output_path, sizes, random_state):
     with DisableLogger():
         train_triples = train.triples
         test_triples = test.triples
-    np.savetxt(
-        os.path.join(output_path, "train.csv"), train_triples, delimiter="\t", fmt="%s"
+    pd.DataFrame(train_triples).to_csv(
+        os.path.join(output_path, "train.csv"), sep="\t", index=False, header=False
     )
-    np.savetxt(
-        os.path.join(output_path, "test.csv"), test_triples, delimiter="\t", fmt="%s"
+    pd.DataFrame(test_triples).to_csv(
+        os.path.join(output_path, "test.csv"), sep="\t", index=False, header=False
     )
     success_msg = f"Created split of {train_triples.shape[0]} train triples; {test_triples.shape[0]} test triples"
     if val:
         with DisableLogger():
             val_triples = val.triples
-        np.savetxt(
-            os.path.join(output_path, "val.csv"), val_triples, delimiter="\t", fmt="%s"
+        pd.DataFrame(val_triples).to_csv(
+            os.path.join(output_path, "val.csv"), sep="\t", index=False, header=False
         )
         success_msg += f"; {val_triples.shape[0]} validation triples"
 
