@@ -63,7 +63,7 @@ def make_smaller_triples(
         len(unique_subjects_small) / len(unique_subjects) * 100, 2
     )
 
-    logger.debug(
+    logger.info(
         f"{len(smaller_triples):,} ({stats_triples_perc}%) triples for {len(unique_subjects_small):,} ({stats_entities_perc}%) entities saved to {output_path}."
     )
 

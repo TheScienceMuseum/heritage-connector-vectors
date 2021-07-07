@@ -21,7 +21,7 @@ def filter_triples_tsv_by_predicates(
 
     filtered_triples = triples[triples["predicate"].isin(predicates_keep)]
     filtered_triples.to_csv(output_path, sep="\t", index=False, header=False)
-    logger.debug(
+    logger.info(
         f"Input no triples: {len(triples):,}. No predicates kept: {len(predicates_keep):,}/{len(predicate_filter):,}. Output no triples: {len(filtered_triples):,}."
     )
 
