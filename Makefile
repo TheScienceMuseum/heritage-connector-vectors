@@ -19,7 +19,7 @@ interim_small: ./data/interim/train_test_split_small/train.csv ./data/interim/tr
 	python src/cli/make_smaller_triples.py -i $< -o $@ -k 0.22
 
 ./data/interim/train_test_split/train.csv ./data/interim/train_test_split/test.csv ./data/interim/train_test_split/val.csv: ./data/interim/triples_filtered_by_predicate.csv
-	python src/cli/train_test_split.py -i $< -o ./data/interim/train_test_split --sizes 0.96,0.02,0.02 --random_state 42
+	python src/cli/train_test_split.py -i $< -o ./data/interim/train_test_split --sizes 0.94,0.03,0.03 --random_state 42
 
 ./data/interim/train_test_split_small/train.csv ./data/interim/train_test_split_small/test.csv ./data/interim/train_test_split_small/val.csv: ./data/interim/triples_filtered_by_predicate_small.csv
-	python src/cli/train_test_split.py -i $< -o ./data/interim/train_test_split --sizes 0.96,0.02,0.02 --random_state 42
+	python src/cli/train_test_split.py -i $< -o ./data/interim/train_test_split --sizes 0.94,0.03,0.03 --random_state 42
