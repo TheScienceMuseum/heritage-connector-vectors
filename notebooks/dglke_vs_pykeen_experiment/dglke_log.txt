@@ -1,0 +1,175 @@
+Reading train triples....
+Finished. Read 2681508 train triples.
+Reading valid triples....
+Finished. Read 55865 valid triples.
+Reading test triples....
+Finished. Read 55865 test triples.
+|Train|: 2681508
+|valid|: 55865
+|test|: 55865
+Total initialize time 22.758 seconds
+[proc 0][Train](10000/134075) average pos_loss: 0.4114603320341557
+[proc 0][Train](10000/134075) average neg_loss: 0.16176901530399918
+[proc 0][Train](10000/134075) average loss: 0.28661467370539906
+[proc 0][Train](10000/134075) average regularization: 0.00038333676978581936
+[proc 0][Train] 10000 steps take 269.307 seconds
+[proc 0]sample: 23.006, forward: 128.991, backward: 96.814, update: 20.342
+[0]Valid average MRR: 0.8612484833660266
+[0]Valid average MR: 2.025498970733017
+[0]Valid average HITS@1: 0.7988185805065784
+[0]Valid average HITS@3: 0.9085115904412423
+[0]Valid average HITS@10: 0.9710731227065247
+[proc 0]validation take 42.417 seconds:
+[proc 0][Train](20000/134075) average pos_loss: 0.057527329552173614
+[proc 0][Train](20000/134075) average neg_loss: 0.05071617407370359
+[proc 0][Train](20000/134075) average loss: 0.05412175178825855
+[proc 0][Train](20000/134075) average regularization: 0.03517892933723051
+[proc 0][Train] 10000 steps take 309.136 seconds
+[proc 0]sample: 23.054, forward: 129.794, backward: 96.931, update: 16.790
+[0]Valid average MRR: 0.8752201033406488
+[0]Valid average MR: 1.8325516871028371
+[0]Valid average HITS@1: 0.81483934484919
+[0]Valid average HITS@3: 0.9233956860288195
+[0]Valid average HITS@10: 0.9781884901100868
+[proc 0]validation take 39.565 seconds:
+[proc 0][Train](30000/134075) average pos_loss: 0.04854006757549942
+[proc 0][Train](30000/134075) average neg_loss: 0.0422230626091361
+[proc 0][Train](30000/134075) average loss: 0.045381565102376044
+[proc 0][Train](30000/134075) average regularization: 0.0983728803679347
+[proc 0][Train] 10000 steps take 303.420 seconds
+[proc 0]sample: 22.738, forward: 127.305, backward: 96.951, update: 16.715
+[0]Valid average MRR: 0.8825223124141371
+[0]Valid average MR: 1.740374116172917
+[0]Valid average HITS@1: 0.8237894925266267
+[0]Valid average HITS@3: 0.9298487425042513
+[0]Valid average HITS@10: 0.9820370536113846
+[proc 0]validation take 39.567 seconds:
+[proc 0][Train](40000/134075) average pos_loss: 0.04511491835936904
+[proc 0][Train](40000/134075) average neg_loss: 0.038856912864930926
+[proc 0][Train](40000/134075) average loss: 0.04198591562025249
+[proc 0][Train](40000/134075) average regularization: 0.1569967657878995
+[proc 0][Train] 10000 steps take 303.844 seconds
+[proc 0]sample: 22.679, forward: 128.376, backward: 96.381, update: 16.694
+[0]Valid average MRR: 0.8853619437582332
+[0]Valid average MR: 1.7006623109281302
+[0]Valid average HITS@1: 0.8272890002685044
+[0]Valid average HITS@3: 0.9330707956681286
+[0]Valid average HITS@10: 0.9828873176407411
+[proc 0]validation take 42.433 seconds:
+[proc 0][Train](50000/134075) average pos_loss: 0.04294773670956492
+[proc 0][Train](50000/134075) average neg_loss: 0.03704097670521587
+[proc 0][Train](50000/134075) average loss: 0.039994356706738475
+[proc 0][Train](50000/134075) average regularization: 0.2042122601032257
+[proc 0][Train] 10000 steps take 306.015 seconds
+[proc 0]sample: 22.850, forward: 127.733, backward: 96.904, update: 15.948
+[0]Valid average MRR: 0.8887014208104268
+[0]Valid average MR: 1.6670455562516782
+[0]Valid average HITS@1: 0.8317998746979325
+[0]Valid average HITS@3: 0.9355589367224559
+[0]Valid average HITS@10: 0.9841045377248725
+[proc 0]validation take 39.140 seconds:
+[proc 0][Train](60000/134075) average pos_loss: 0.0419906807878986
+[proc 0][Train](60000/134075) average neg_loss: 0.03601445978265256
+[proc 0][Train](60000/134075) average loss: 0.03900257028900087
+[proc 0][Train](60000/134075) average regularization: 0.237074968726933
+[proc 0][Train] 10000 steps take 305.585 seconds
+[proc 0]sample: 23.133, forward: 129.160, backward: 97.129, update: 16.873
+[0]Valid average MRR: 0.8899903412650244
+[0]Valid average MR: 1.6457710552224112
+[0]Valid average HITS@1: 0.8329723440436767
+[0]Valid average HITS@3: 0.9377875234941376
+[0]Valid average HITS@10: 0.9851517050031325
+[proc 0]validation take 42.929 seconds:
+[proc 0][Train](70000/134075) average pos_loss: 0.04129260390922427
+[proc 0][Train](70000/134075) average neg_loss: 0.03534580204281956
+[proc 0][Train](70000/134075) average loss: 0.03831920300349593
+[proc 0][Train](70000/134075) average regularization: 0.25541877258867024
+[proc 0][Train] 10000 steps take 307.940 seconds
+[proc 0]sample: 22.749, forward: 128.845, backward: 97.052, update: 16.215
+[0]Valid average MRR: 0.8922870014538893
+[0]Valid average MR: 1.625212566007339
+[0]Valid average HITS@1: 0.8362480980936186
+[0]Valid average HITS@3: 0.9395328022912378
+[0]Valid average HITS@10: 0.9861630716906828
+[proc 0]validation take 42.496 seconds:
+[proc 0][Train](80000/134075) average pos_loss: 0.040635195291601124
+[proc 0][Train](80000/134075) average neg_loss: 0.03475884844092652
+[proc 0][Train](80000/134075) average loss: 0.03769702186472714
+[proc 0][Train](80000/134075) average regularization: 0.2810236553758383
+[proc 0][Train] 10000 steps take 305.315 seconds
+[proc 0]sample: 22.527, forward: 127.373, backward: 96.916, update: 15.858
+[0]Valid average MRR: 0.8928971007763983
+[0]Valid average MR: 1.612297502908798
+[0]Valid average HITS@1: 0.8365613532623288
+[0]Valid average HITS@3: 0.9406963214893046
+[0]Valid average HITS@10: 0.9863689250872639
+[proc 0]validation take 39.181 seconds:
+[proc 0][Train](90000/134075) average pos_loss: 0.04038933973591775
+[proc 0][Train](90000/134075) average neg_loss: 0.03445135070364922
+[proc 0][Train](90000/134075) average loss: 0.03742034523244947
+[proc 0][Train](90000/134075) average regularization: 0.3093740769177675
+[proc 0][Train] 10000 steps take 307.950 seconds
+[proc 0]sample: 23.405, forward: 130.917, backward: 97.251, update: 17.045
+[0]Valid average MRR: 0.8927603680734738
+[0]Valid average MR: 1.606560458247561
+[0]Valid average HITS@1: 0.8361227960261345
+[0]Valid average HITS@3: 0.9405262686834333
+[0]Valid average HITS@10: 0.9867537814373937
+[proc 0]validation take 42.543 seconds:
+[proc 0][Train](100000/134075) average pos_loss: 0.03985144515130669
+[proc 0][Train](100000/134075) average neg_loss: 0.03411385598434135
+[proc 0][Train](100000/134075) average loss: 0.03698265059050172
+[proc 0][Train](100000/134075) average regularization: 0.31552955312132835
+[proc 0][Train] 10000 steps take 307.376 seconds
+[proc 0]sample: 22.757, forward: 128.664, backward: 96.894, update: 16.372
+[0]Valid average MRR: 0.893740769259993
+[0]Valid average MR: 1.6017542289447775
+[0]Valid average HITS@1: 0.8377875234941377
+[0]Valid average HITS@3: 0.9409737760673051
+[0]Valid average HITS@10: 0.9866105790745547
+[proc 0]validation take 39.205 seconds:
+[proc 0][Train](110000/134075) average pos_loss: 0.03979990020599216
+[proc 0][Train](110000/134075) average neg_loss: 0.033913789997296405
+[proc 0][Train](110000/134075) average loss: 0.036856845125555995
+[proc 0][Train](110000/134075) average regularization: 0.33753114165961745
+[proc 0][Train] 10000 steps take 339.001 seconds
+[proc 0]sample: 22.916, forward: 120.649, backward: 104.798, update: 51.286
+[0]Valid average MRR: 0.8950097999482743
+[0]Valid average MR: 1.5868790835048778
+[0]Valid average HITS@1: 0.8393090485993019
+[0]Valid average HITS@3: 0.9419851427548555
+[0]Valid average HITS@10: 0.9871028371968138
+[proc 0]validation take 39.195 seconds:
+[proc 0][Train](120000/134075) average pos_loss: 0.03947555534970015
+[proc 0][Train](120000/134075) average neg_loss: 0.033748493175394835
+[proc 0][Train](120000/134075) average loss: 0.036612024269253016
+[proc 0][Train](120000/134075) average regularization: 0.35567477078735826
+[proc 0][Train] 10000 steps take 334.902 seconds
+[proc 0]sample: 23.012, forward: 122.139, backward: 103.254, update: 47.148
+[0]Valid average MRR: 0.8951570862300265
+[0]Valid average MR: 1.5816074465228676
+[0]Valid average HITS@1: 0.8387899400340105
+[0]Valid average HITS@3: 0.9437125212566008
+[0]Valid average HITS@10: 0.9870401861630717
+[proc 0]validation take 42.290 seconds:
+[proc 0][Train](130000/134075) average pos_loss: 0.03933356681484729
+[proc 0][Train](130000/134075) average neg_loss: 0.03370040409229696
+[proc 0][Train](130000/134075) average loss: 0.03651698543000966
+[proc 0][Train](130000/134075) average regularization: 0.36540678047537806
+[proc 0][Train] 10000 steps take 306.072 seconds
+[proc 0]sample: 22.730, forward: 127.946, backward: 96.754, update: 16.207
+[0]Valid average MRR: 0.8952570774422163
+[0]Valid average MR: 1.5757361496464692
+[0]Valid average HITS@1: 0.8391926966794953
+[0]Valid average HITS@3: 0.9427996061935022
+[0]Valid average HITS@10: 0.9875771950237179
+[proc 0]validation take 39.549 seconds:
+proc 0 takes 4152.863 seconds
+training takes 4157.1665122509 seconds
+Save model to dglke_results/RotatE_heritageconnector_3
+[0]Test average MRR: 0.8975267225355149
+[0]Test average MR: 1.5658909872012887
+[0]Test average HITS@1: 0.8423520988096304
+[0]Test average HITS@3: 0.9452787971001522
+[0]Test average HITS@10: 0.9875413944330081
+testing takes 40.107 seconds
