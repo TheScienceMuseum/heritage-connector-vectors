@@ -1,0 +1,333 @@
+Reading train triples....
+Finished. Read 2625643 train triples.
+Reading valid triples....
+Finished. Read 83798 valid triples.
+Reading test triples....
+Finished. Read 83797 test triples.
+|Train|: 2625643
+|valid|: 83798
+|test|: 83797
+Total initialize time 15.821 seconds
+/home/ubuntu/.pyenv/versions/3.8.7/envs/hcvectors/lib/python3.8/site-packages/dgl/base.py:25: UserWarning: multigraph will be deprecated.DGL will treat all graphs as multigraph in the future.
+  warnings.warn(msg, warn_type)
+[proc 0][Train](10000/525128) average pos_loss: 0.0016814473196959856
+[proc 0][Train](10000/525128) average neg_loss: 8.73315186228752
+[proc 0][Train](10000/525128) average loss: 4.367416652083397
+[proc 0][Train](10000/525128) average regularization: 2.3662778608645545
+[proc 0][Train] 10000 steps take 132.579 seconds
+[proc 0]sample: 26.710, forward: 53.847, backward: 19.982, update: 31.918
+[proc 0][Train](20000/525128) average pos_loss: 0.005071500146947801
+[proc 0][Train](20000/525128) average neg_loss: 6.730018935489655
+[proc 0][Train](20000/525128) average loss: 3.36754521753788
+[proc 0][Train](20000/525128) average regularization: 2.83355626809597
+[proc 0][Train] 10000 steps take 127.288 seconds
+[proc 0]sample: 26.804, forward: 54.111, backward: 20.179, update: 26.072
+[proc 0][Train](30000/525128) average pos_loss: 0.009136583468131721
+[proc 0][Train](30000/525128) average neg_loss: 6.399867331504821
+[proc 0][Train](30000/525128) average loss: 3.204501956868172
+[proc 0][Train](30000/525128) average regularization: 2.8628492752552033
+[proc 0][Train] 10000 steps take 130.524 seconds
+[proc 0]sample: 26.907, forward: 54.478, backward: 20.565, update: 28.445
+[proc 0][Train](40000/525128) average pos_loss: 0.01417564957253635
+[proc 0][Train](40000/525128) average neg_loss: 6.22540924539566
+[proc 0][Train](40000/525128) average loss: 3.1197924479246137
+[proc 0][Train](40000/525128) average regularization: 2.856948834705353
+[proc 0][Train] 10000 steps take 130.768 seconds
+[proc 0]sample: 27.701, forward: 55.908, backward: 20.633, update: 26.401
+[proc 0][Train](50000/525128) average pos_loss: 0.019995153795555234
+[proc 0][Train](50000/525128) average neg_loss: 6.119704424333572
+[proc 0][Train](50000/525128) average loss: 3.0698497886896132
+[proc 0][Train](50000/525128) average regularization: 2.8370529397249222
+[proc 0][Train] 10000 steps take 128.866 seconds
+[proc 0]sample: 27.504, forward: 55.716, backward: 20.395, update: 25.124
+[proc 0][Train](60000/525128) average pos_loss: 0.026328783719614147
+[proc 0][Train](60000/525128) average neg_loss: 6.054141564798355
+[proc 0][Train](60000/525128) average loss: 3.040235174560547
+[proc 0][Train](60000/525128) average regularization: 2.809942607998848
+[proc 0][Train] 10000 steps take 128.849 seconds
+[proc 0]sample: 27.300, forward: 55.749, backward: 20.325, update: 25.349
+[proc 0][Train](70000/525128) average pos_loss: 0.03292915066760033
+[proc 0][Train](70000/525128) average neg_loss: 6.014009773874283
+[proc 0][Train](70000/525128) average loss: 3.023469461417198
+[proc 0][Train](70000/525128) average regularization: 2.779310550403595
+[proc 0][Train] 10000 steps take 129.159 seconds
+[proc 0]sample: 26.853, forward: 54.892, backward: 20.350, update: 26.939
+[proc 0][Train](80000/525128) average pos_loss: 0.039612746553122996
+[proc 0][Train](80000/525128) average neg_loss: 5.990275441360474
+[proc 0][Train](80000/525128) average loss: 3.0149440953969955
+[proc 0][Train](80000/525128) average regularization: 2.7473317868232727
+[proc 0][Train] 10000 steps take 130.367 seconds
+[proc 0]sample: 26.731, forward: 53.922, backward: 20.459, update: 29.130
+[proc 0][Train](90000/525128) average pos_loss: 0.0462413667909801
+[proc 0][Train](90000/525128) average neg_loss: 5.977488844633102
+[proc 0][Train](90000/525128) average loss: 3.011865106153488
+[proc 0][Train](90000/525128) average regularization: 2.7153877115011213
+[proc 0][Train] 10000 steps take 128.766 seconds
+[proc 0]sample: 27.238, forward: 54.729, backward: 20.305, update: 26.368
+[proc 0][Train](100000/525128) average pos_loss: 0.05270964995138347
+[proc 0][Train](100000/525128) average neg_loss: 5.971970383739471
+[proc 0][Train](100000/525128) average loss: 3.012340017414093
+[proc 0][Train](100000/525128) average regularization: 2.6842933344364166
+[proc 0][Train] 10000 steps take 129.487 seconds
+[proc 0]sample: 27.317, forward: 55.191, backward: 20.531, update: 26.320
+[proc 0][Train](110000/525128) average pos_loss: 0.05896400591395795
+[proc 0][Train](110000/525128) average neg_loss: 5.971208024549484
+[proc 0][Train](110000/525128) average loss: 3.015086014032364
+[proc 0][Train](110000/525128) average regularization: 2.6544709725379945
+[proc 0][Train] 10000 steps take 129.334 seconds
+[proc 0]sample: 27.388, forward: 56.088, backward: 20.105, update: 25.626
+[proc 0][Train](120000/525128) average pos_loss: 0.0649605314631015
+[proc 0][Train](120000/525128) average neg_loss: 5.973518448734284
+[proc 0][Train](120000/525128) average loss: 3.0192394896268846
+[proc 0][Train](120000/525128) average regularization: 2.62623161008358
+[proc 0][Train] 10000 steps take 129.580 seconds
+[proc 0]sample: 27.108, forward: 54.657, backward: 20.396, update: 27.294
+[proc 0][Train](130000/525128) average pos_loss: 0.07067771007418633
+[proc 0][Train](130000/525128) average neg_loss: 5.977837310934067
+[proc 0][Train](130000/525128) average loss: 3.0242575110197065
+[proc 0][Train](130000/525128) average regularization: 2.599597748374939
+[proc 0][Train] 10000 steps take 131.015 seconds
+[proc 0]sample: 26.785, forward: 54.235, backward: 20.592, update: 29.276
+[proc 0][Train](140000/525128) average pos_loss: 0.07612217210456729
+[proc 0][Train](140000/525128) average neg_loss: 5.983425653982162
+[proc 0][Train](140000/525128) average loss: 3.0297739133358004
+[proc 0][Train](140000/525128) average regularization: 2.5745617540597916
+[proc 0][Train] 10000 steps take 129.544 seconds
+[proc 0]sample: 26.715, forward: 54.551, backward: 20.408, update: 27.745
+[proc 0][Train](150000/525128) average pos_loss: 0.08128435652479529
+[proc 0][Train](150000/525128) average neg_loss: 5.989775397109986
+[proc 0][Train](150000/525128) average loss: 3.0355298756599427
+[proc 0][Train](150000/525128) average regularization: 2.55108796043396
+[proc 0][Train] 10000 steps take 128.276 seconds
+[proc 0]sample: 26.778, forward: 54.084, backward: 20.202, update: 27.088
+[proc 0][Train](160000/525128) average pos_loss: 0.08617501878961921
+[proc 0][Train](160000/525128) average neg_loss: 5.99657538228035
+[proc 0][Train](160000/525128) average loss: 3.0413751999616623
+[proc 0][Train](160000/525128) average regularization: 2.5290360453367233
+[proc 0][Train] 10000 steps take 129.557 seconds
+[proc 0]sample: 26.884, forward: 54.983, backward: 20.371, update: 27.192
+[proc 0][Train](170000/525128) average pos_loss: 0.0908147027298808
+[proc 0][Train](170000/525128) average neg_loss: 6.003472305202484
+[proc 0][Train](170000/525128) average loss: 3.047143503522873
+[proc 0][Train](170000/525128) average regularization: 2.5083920758962632
+[proc 0][Train] 10000 steps take 130.489 seconds
+[proc 0]sample: 27.306, forward: 55.404, backward: 20.399, update: 27.251
+[proc 0][Train](180000/525128) average pos_loss: 0.09521265955716371
+[proc 0][Train](180000/525128) average neg_loss: 6.010725329828262
+[proc 0][Train](180000/525128) average loss: 3.05296899266243
+[proc 0][Train](180000/525128) average regularization: 2.4890005734443665
+[proc 0][Train] 10000 steps take 133.105 seconds
+[proc 0]sample: 27.082, forward: 60.803, backward: 20.345, update: 24.749
+[proc 0][Train](190000/525128) average pos_loss: 0.09939931078553199
+[proc 0][Train](190000/525128) average neg_loss: 6.017612657308579
+[proc 0][Train](190000/525128) average loss: 3.0585059844732285
+[proc 0][Train](190000/525128) average regularization: 2.4707939670562746
+[proc 0][Train] 10000 steps take 130.893 seconds
+[proc 0]sample: 27.014, forward: 57.670, backward: 20.155, update: 25.930
+[proc 0][Train](200000/525128) average pos_loss: 0.1033710114121437
+[proc 0][Train](200000/525128) average neg_loss: 6.024386743211746
+[proc 0][Train](200000/525128) average loss: 3.063878875875473
+[proc 0][Train](200000/525128) average regularization: 2.453696554493904
+[proc 0][Train] 10000 steps take 131.905 seconds
+[proc 0]sample: 27.041, forward: 54.935, backward: 20.628, update: 29.176
+[proc 0][Train](210000/525128) average pos_loss: 0.10712535040825605
+[proc 0][Train](210000/525128) average neg_loss: 6.031006096410751
+[proc 0][Train](210000/525128) average loss: 3.069065723490715
+[proc 0][Train](210000/525128) average regularization: 2.4375966989040374
+[proc 0][Train] 10000 steps take 129.069 seconds
+[proc 0]sample: 26.828, forward: 54.427, backward: 20.281, update: 27.406
+[proc 0][Train](220000/525128) average pos_loss: 0.11070418020561337
+[proc 0][Train](220000/525128) average neg_loss: 6.037464516067505
+[proc 0][Train](220000/525128) average loss: 3.0740843465328216
+[proc 0][Train](220000/525128) average regularization: 2.4224124311208723
+[proc 0][Train] 10000 steps take 128.065 seconds
+[proc 0]sample: 26.876, forward: 54.557, backward: 20.416, update: 26.091
+[proc 0][Train](230000/525128) average pos_loss: 0.11412965307682753
+[proc 0][Train](230000/525128) average neg_loss: 6.043535137224198
+[proc 0][Train](230000/525128) average loss: 3.078832394862175
+[proc 0][Train](230000/525128) average regularization: 2.408092812728882
+[proc 0][Train] 10000 steps take 130.539 seconds
+[proc 0]sample: 27.267, forward: 55.611, backward: 20.313, update: 27.222
+[proc 0][Train](240000/525128) average pos_loss: 0.11737138062864542
+[proc 0][Train](240000/525128) average neg_loss: 6.0493197984695435
+[proc 0][Train](240000/525128) average loss: 3.0833455893278123
+[proc 0][Train](240000/525128) average regularization: 2.3946608746290208
+[proc 0][Train] 10000 steps take 128.230 seconds
+[proc 0]sample: 26.635, forward: 53.985, backward: 20.034, update: 27.453
+[proc 0][Train](250000/525128) average pos_loss: 0.12047276660203934
+[proc 0][Train](250000/525128) average neg_loss: 6.054649973201752
+[proc 0][Train](250000/525128) average loss: 3.087561369943619
+[proc 0][Train](250000/525128) average regularization: 2.381966501045227
+[proc 0][Train] 10000 steps take 130.549 seconds
+[proc 0]sample: 27.530, forward: 55.948, backward: 20.750, update: 26.195
+[proc 0][Train](260000/525128) average pos_loss: 0.12343671194165945
+[proc 0][Train](260000/525128) average neg_loss: 6.059774871110916
+[proc 0][Train](260000/525128) average loss: 3.091605793237686
+[proc 0][Train](260000/525128) average regularization: 2.3699386546373367
+[proc 0][Train] 10000 steps take 130.815 seconds
+[proc 0]sample: 27.123, forward: 54.666, backward: 20.883, update: 28.015
+[proc 0][Train](270000/525128) average pos_loss: 0.12625496641099454
+[proc 0][Train](270000/525128) average neg_loss: 6.064680706882477
+[proc 0][Train](270000/525128) average loss: 3.095467836356163
+[proc 0][Train](270000/525128) average regularization: 2.3585673276424406
+[proc 0][Train] 10000 steps take 128.326 seconds
+[proc 0]sample: 26.813, forward: 54.369, backward: 20.347, update: 26.671
+[proc 0][Train](280000/525128) average pos_loss: 0.1289417079001665
+[proc 0][Train](280000/525128) average neg_loss: 6.069500198411942
+[proc 0][Train](280000/525128) average loss: 3.09922095246315
+[proc 0][Train](280000/525128) average regularization: 2.3477471197366713
+[proc 0][Train] 10000 steps take 131.012 seconds
+[proc 0]sample: 27.049, forward: 54.339, backward: 20.625, update: 28.872
+[proc 0][Train](290000/525128) average pos_loss: 0.1314984689772129
+[proc 0][Train](290000/525128) average neg_loss: 6.0737776658535
+[proc 0][Train](290000/525128) average loss: 3.102638068675995
+[proc 0][Train](290000/525128) average regularization: 2.3374532519340514
+[proc 0][Train] 10000 steps take 128.658 seconds
+[proc 0]sample: 26.903, forward: 54.152, backward: 20.379, update: 27.098
+[proc 0][Train](300000/525128) average pos_loss: 0.13396460828334092
+[proc 0][Train](300000/525128) average neg_loss: 6.077990874814987
+[proc 0][Train](300000/525128) average loss: 3.1059777421474455
+[proc 0][Train](300000/525128) average regularization: 2.327694559621811
+[proc 0][Train] 10000 steps take 138.992 seconds
+[proc 0]sample: 29.448, forward: 61.188, backward: 21.330, update: 26.887
+[proc 0][Train](310000/525128) average pos_loss: 0.1363186979815364
+[proc 0][Train](310000/525128) average neg_loss: 6.081759391784668
+[proc 0][Train](310000/525128) average loss: 3.109039045000076
+[proc 0][Train](310000/525128) average regularization: 2.318383174133301
+[proc 0][Train] 10000 steps take 145.681 seconds
+[proc 0]sample: 30.140, forward: 64.600, backward: 21.749, update: 29.051
+[proc 0][Train](320000/525128) average pos_loss: 0.138582926158607
+[proc 0][Train](320000/525128) average neg_loss: 6.085564736890793
+[proc 0][Train](320000/525128) average loss: 3.112073833990097
+[proc 0][Train](320000/525128) average regularization: 2.3095844886779786
+[proc 0][Train] 10000 steps take 138.576 seconds
+[proc 0]sample: 29.085, forward: 59.657, backward: 20.944, update: 28.746
+[proc 0][Train](330000/525128) average pos_loss: 0.14076955600529908
+[proc 0][Train](330000/525128) average neg_loss: 6.0888302686691285
+[proc 0][Train](330000/525128) average loss: 3.1147999135255815
+[proc 0][Train](330000/525128) average regularization: 2.3011784636020662
+[proc 0][Train] 10000 steps take 140.177 seconds
+[proc 0]sample: 30.163, forward: 61.387, backward: 21.228, update: 27.255
+[proc 0][Train](340000/525128) average pos_loss: 0.14284577257037162
+[proc 0][Train](340000/525128) average neg_loss: 6.091835407352447
+[proc 0][Train](340000/525128) average loss: 3.1173405903339386
+[proc 0][Train](340000/525128) average regularization: 2.2932308375597
+[proc 0][Train] 10000 steps take 141.918 seconds
+[proc 0]sample: 30.144, forward: 62.297, backward: 21.288, update: 28.040
+[proc 0][Train](350000/525128) average pos_loss: 0.1448728556841612
+[proc 0][Train](350000/525128) average neg_loss: 6.094770980334282
+[proc 0][Train](350000/525128) average loss: 3.119821917796135
+[proc 0][Train](350000/525128) average regularization: 2.2856224659442903
+[proc 0][Train] 10000 steps take 139.887 seconds
+[proc 0]sample: 29.248, forward: 61.414, backward: 21.319, update: 27.760
+[proc 0][Train](360000/525128) average pos_loss: 0.14681435676813126
+[proc 0][Train](360000/525128) average neg_loss: 6.09737038435936
+[proc 0][Train](360000/525128) average loss: 3.122092370796204
+[proc 0][Train](360000/525128) average regularization: 2.2783944029569625
+[proc 0][Train] 10000 steps take 138.484 seconds
+[proc 0]sample: 29.704, forward: 61.306, backward: 21.197, update: 26.136
+[proc 0][Train](370000/525128) average pos_loss: 0.14867128798365592
+[proc 0][Train](370000/525128) average neg_loss: 6.0997498628377915
+[proc 0][Train](370000/525128) average loss: 3.1242105752944944
+[proc 0][Train](370000/525128) average regularization: 2.2714921797275545
+[proc 0][Train] 10000 steps take 137.922 seconds
+[proc 0]sample: 29.165, forward: 59.857, backward: 21.308, update: 27.453
+[proc 0][Train](380000/525128) average pos_loss: 0.15047201069891453
+[proc 0][Train](380000/525128) average neg_loss: 6.101968543624878
+[proc 0][Train](380000/525128) average loss: 3.1262202758550646
+[proc 0][Train](380000/525128) average regularization: 2.2648447442054747
+[proc 0][Train] 10000 steps take 130.251 seconds
+[proc 0]sample: 27.801, forward: 56.181, backward: 20.479, update: 25.663
+[proc 0][Train](390000/525128) average pos_loss: 0.1522103708833456
+[proc 0][Train](390000/525128) average neg_loss: 6.104120638012886
+[proc 0][Train](390000/525128) average loss: 3.1281655062675475
+[proc 0][Train](390000/525128) average regularization: 2.2585585505723955
+[proc 0][Train] 10000 steps take 129.649 seconds
+[proc 0]sample: 27.069, forward: 55.003, backward: 20.365, update: 27.086
+[proc 0][Train](400000/525128) average pos_loss: 0.15388788980543613
+[proc 0][Train](400000/525128) average neg_loss: 6.10598674595356
+[proc 0][Train](400000/525128) average loss: 3.129937319231033
+[proc 0][Train](400000/525128) average regularization: 2.2524530296564103
+[proc 0][Train] 10000 steps take 131.179 seconds
+[proc 0]sample: 27.169, forward: 55.184, backward: 20.923, update: 27.778
+[proc 0][Train](410000/525128) average pos_loss: 0.15550734180659057
+[proc 0][Train](410000/525128) average neg_loss: 6.107842827224731
+[proc 0][Train](410000/525128) average loss: 3.131675086236
+[proc 0][Train](410000/525128) average regularization: 2.246587724137306
+[proc 0][Train] 10000 steps take 130.469 seconds
+[proc 0]sample: 27.034, forward: 54.844, backward: 20.499, update: 27.965
+[proc 0][Train](420000/525128) average pos_loss: 0.1570656403377652
+[proc 0][Train](420000/525128) average neg_loss: 6.109516612768173
+[proc 0][Train](420000/525128) average loss: 3.1332911254882814
+[proc 0][Train](420000/525128) average regularization: 2.240959708738327
+[proc 0][Train] 10000 steps take 129.790 seconds
+[proc 0]sample: 27.249, forward: 55.182, backward: 20.263, update: 26.967
+[proc 0][Train](430000/525128) average pos_loss: 0.15856989229768514
+[proc 0][Train](430000/525128) average neg_loss: 6.111106186413765
+[proc 0][Train](430000/525128) average loss: 3.134838038754463
+[proc 0][Train](430000/525128) average regularization: 2.2355305844783784
+[proc 0][Train] 10000 steps take 129.919 seconds
+[proc 0]sample: 26.649, forward: 54.041, backward: 20.515, update: 28.588
+[proc 0][Train](440000/525128) average pos_loss: 0.1600149426549673
+[proc 0][Train](440000/525128) average neg_loss: 6.112617813134193
+[proc 0][Train](440000/525128) average loss: 3.136316380548477
+[proc 0][Train](440000/525128) average regularization: 2.230304333281517
+[proc 0][Train] 10000 steps take 131.960 seconds
+[proc 0]sample: 27.074, forward: 55.149, backward: 20.619, update: 28.992
+[proc 0][Train](450000/525128) average pos_loss: 0.1614200156405568
+[proc 0][Train](450000/525128) average neg_loss: 6.114225987792015
+[proc 0][Train](450000/525128) average loss: 3.137823001766205
+[proc 0][Train](450000/525128) average regularization: 2.225165600657463
+[proc 0][Train] 10000 steps take 130.167 seconds
+[proc 0]sample: 27.248, forward: 55.396, backward: 20.498, update: 26.897
+[proc 0][Train](460000/525128) average pos_loss: 0.16276390022933482
+[proc 0][Train](460000/525128) average neg_loss: 6.115567040276527
+[proc 0][Train](460000/525128) average loss: 3.139165470480919
+[proc 0][Train](460000/525128) average regularization: 2.220292800307274
+[proc 0][Train] 10000 steps take 129.521 seconds
+[proc 0]sample: 27.597, forward: 55.343, backward: 20.222, update: 26.234
+[proc 0][Train](470000/525128) average pos_loss: 0.16408930459469556
+[proc 0][Train](470000/525128) average neg_loss: 6.116808159399032
+[proc 0][Train](470000/525128) average loss: 3.1404487319469454
+[proc 0][Train](470000/525128) average regularization: 2.215529987001419
+[proc 0][Train] 10000 steps take 131.632 seconds
+[proc 0]sample: 27.126, forward: 55.173, backward: 20.663, update: 28.546
+[proc 0][Train](480000/525128) average pos_loss: 0.1653465713903308
+[proc 0][Train](480000/525128) average neg_loss: 6.118097617650032
+[proc 0][Train](480000/525128) average loss: 3.1417220960140226
+[proc 0][Train](480000/525128) average regularization: 2.2109401650190352
+[proc 0][Train] 10000 steps take 128.872 seconds
+[proc 0]sample: 27.239, forward: 55.187, backward: 20.136, update: 26.182
+[proc 0][Train](490000/525128) average pos_loss: 0.16657211070656777
+[proc 0][Train](490000/525128) average neg_loss: 6.1193491789340975
+[proc 0][Train](490000/525128) average loss: 3.142960644674301
+[proc 0][Train](490000/525128) average regularization: 2.2065685422420502
+[proc 0][Train] 10000 steps take 130.113 seconds
+[proc 0]sample: 27.226, forward: 54.736, backward: 20.388, update: 27.636
+[proc 0][Train](500000/525128) average pos_loss: 0.16777306397110223
+[proc 0][Train](500000/525128) average neg_loss: 6.119981098914146
+[proc 0][Train](500000/525128) average loss: 3.143877082490921
+[proc 0][Train](500000/525128) average regularization: 2.2022591596603394
+[proc 0][Train] 10000 steps take 130.417 seconds
+[proc 0]sample: 26.956, forward: 54.963, backward: 20.539, update: 27.833
+[proc 0][Train](510000/525128) average pos_loss: 0.168939600995183
+[proc 0][Train](510000/525128) average neg_loss: 6.121043284130097
+[proc 0][Train](510000/525128) average loss: 3.1449914434909823
+[proc 0][Train](510000/525128) average regularization: 2.198161049699783
+[proc 0][Train] 10000 steps take 130.714 seconds
+[proc 0]sample: 26.950, forward: 55.194, backward: 20.582, update: 27.862
+[proc 0][Train](520000/525128) average pos_loss: 0.17006722698360682
+[proc 0][Train](520000/525128) average neg_loss: 6.121876251578331
+[proc 0][Train](520000/525128) average loss: 3.145971738910675
+[proc 0][Train](520000/525128) average regularization: 2.194180889105797
+[proc 0][Train] 10000 steps take 130.596 seconds
+[proc 0]sample: 27.859, forward: 55.932, backward: 20.469, update: 26.210
+proc 0 takes 6909.217 seconds
+training takes 6913.030075788498 seconds
+Save model to ./dglke_results/TransE_l2_heritageconnector_3
+[0]Test average MRR: 0.0044601308698477065
+[0]Test average MR: 795.583684380109
+[0]Test average HITS@1: 0.0008174516987481652
+[0]Test average HITS@3: 0.0023031850782247575
+[0]Test average HITS@10: 0.005590892275379787
+testing takes 30.592 seconds

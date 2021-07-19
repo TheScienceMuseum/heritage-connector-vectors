@@ -1,3 +1,7 @@
+# repo folders
+notebooks/dglke_results/**
+#
+
 .python-version
 .vscode
 
