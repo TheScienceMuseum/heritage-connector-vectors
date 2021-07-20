@@ -6,3 +6,5 @@ click
 jupyterlab
 ipywidgets # required by pykeen hyperparameter opt in notebooks
 faiss-cpu
+uvicorn
+fastapi
