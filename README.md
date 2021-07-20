@@ -13,3 +13,4 @@ A library that:
 ## Commands
 
 * set up (install requirements and pre-commit hooks): `make init`
+* run api for nearest neighbour search: `python -m src.api -p {port}`

@@ -3,6 +3,7 @@ anyio==3.2.1
 appdirs==1.4.4
 appnope==0.1.2
 argon2-cffi==20.1.0
+asgiref==3.4.1
 async-generator==1.10
 attrs==21.2.0
 Babel==2.9.1
@@ -39,10 +40,12 @@ distributed==2021.7.0
 docdata==0.0.3
 entrypoints==0.3
 faiss-cpu==1.7.1.post2
+fastapi==0.66.1
 filelock==3.0.12
 flake8==3.9.2
 fsspec==2021.7.0
 greenlet==1.1.0
+h11==0.12.0
 HeapDict==1.0.1
 holoviews==1.14.5
 huggingface-hub==0.0.12
@@ -114,6 +117,7 @@ ptyprocess==0.7.0
 pycodestyle==2.7.0
 pycparser==2.20
 pyct==0.4.8
+pydantic==1.8.2
 pyflakes==2.3.1
 Pygments==2.9.0
 pykeen==1.5.0
@@ -142,6 +146,7 @@ sklearn==0.0
 sniffio==1.2.0
 sortedcontainers==2.4.0
 SQLAlchemy==1.4.20
+starlette==0.14.2
 stevedore==3.3.0
 stringcase==1.2.0
 tabulate==0.8.9
@@ -163,6 +168,7 @@ typing-extensions==3.10.0.0
 typing-inspect==0.7.1
 umap-learn==0.5.1
 urllib3==1.26.6
+uvicorn==0.14.0
 virtualenv==20.4.7
 wcwidth==0.2.5
 webencodings==0.5.1
