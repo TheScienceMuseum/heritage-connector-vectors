@@ -51,5 +51,4 @@ class FaissNearestNeighbours:
         distances, idxs = self.faiss_index.search(xq, k)
         entities = [self.embedding_store.idxs_to_entities(_) for _ in idxs]
 
-        # we reverse here because Faiss returns the values in the reverse order
-        return entities[::-1], distances[::-1]
+        return entities, distances

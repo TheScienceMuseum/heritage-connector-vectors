@@ -57,9 +57,13 @@ class KGEmbeddingStore:
         if not entities:
             return self.ent_embedding_matrix
 
-        idxs = self._ent_mapping[
-            self._ent_mapping["value"].isin(entities)
-        ].index.tolist()
+        tempdf = self._ent_mapping[self._ent_mapping["value"].isin(entities)]
+        # Here we create a new column which allows us to ensure the returned idxs match up to the order
+        # of `entities`.
+        tempdf["sort_entities"] = pd.Categorical(
+            tempdf["value"], categories=entities, ordered=True
+        )
+        idxs = tempdf.sort_values("sort_entities").index.tolist()
 
         return self._ent_embeddings[idxs, :]
 
