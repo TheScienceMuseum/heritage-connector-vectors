@@ -1,5 +1,5 @@
-# repo folders
-notebooks/dglke_results/**/*.npy
+# all numpy arrays in notebooks (because these will be large)
+notebooks/**/*.npy
 #
 
 .python-version
