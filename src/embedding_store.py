@@ -1,5 +1,5 @@
 import os
-from typing import Iterable
+from typing import Iterable, List
 import numpy as np
 import pandas as pd
 
@@ -37,7 +37,23 @@ class KGEmbeddingStore:
     def rel_embedding_matrix(self):
         return self._rel_embeddings
 
-    def get_entity_embeddings(self, entities: Iterable[str] = None):
+    @property
+    def entity_dim(self):
+        return self._ent_embeddings.shape[1]
+
+    @property
+    def relation_dim(self):
+        return self._rel_embeddings.shape[1]
+
+    def get_entity_embeddings(self, entities: Iterable[str] = None) -> np.ndarray:
+        """Get embeddings vectors for a subset of entities.
+
+        Args:
+            entities (Iterable[str], optional): List of entities by URI/value. Defaults to None.
+
+        Returns:
+            np.ndarray: rows correspond to order of `entities`
+        """
         if not entities:
             return self.ent_embedding_matrix
 
@@ -47,7 +63,16 @@ class KGEmbeddingStore:
 
         return self._ent_embeddings[idxs, :]
 
-    def get_relation_embeddings(self, relations: Iterable[str] = None):
+    def get_relation_embeddings(self, relations: Iterable[str] = None) -> np.ndarray:
+        """Get embeddings vectors for a subset of relations.
+
+        Args:
+            relations (Iterable[str], optional): List of relations by URI/value. Defaults to None.
+
+        Returns:
+            np.ndarray: rows correspond to order of `relations`
+        """
+
         if not relations:
             return self.rel_embedding_matrix
 
@@ -56,6 +81,14 @@ class KGEmbeddingStore:
         ].index.tolist()
 
         return self._rel_embeddings[idxs, :]
+
+    def idxs_to_entities(self, idxs: int) -> List[str]:
+        """Convert indexes to entity values."""
+        return self._ent_mapping.iloc[idxs]["value"].tolist()
+
+    def idxs_to_relations(self, idxs: int) -> List[str]:
+        """Convert indexes to relation values."""
+        return self._rel_embeddings.iloc[idxs]["value"].tolist()
 
     @classmethod
     def from_dglke(
