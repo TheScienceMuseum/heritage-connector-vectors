@@ -33,7 +33,7 @@ class NeighboursRequest(BaseModel):
 async def get_nearest_neighbours(request: NeighboursRequest):
     neighbours, distances = faiss_index.search(request.entities, request.k)
 
-    response = []
+    response = {}
 
     for idx, ent in enumerate(request.entities):
         if ent != neighbours[idx][0]:
@@ -42,7 +42,7 @@ async def get_nearest_neighbours(request: NeighboursRequest):
                 detail=f"It looks like there's a mismatch between a request entity and its nearest neighbour. Problem entity: {ent}",
             )
 
-        response.append(
+        response.update(
             {ent: list(zip(neighbours[idx][1:], distances[idx][1:].tolist()))}
         )
 
