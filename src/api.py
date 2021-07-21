@@ -31,7 +31,7 @@ class NeighboursRequest(BaseModel):
 
 @app.post("/neighbours")
 async def get_nearest_neighbours(request: NeighboursRequest):
-    neighbours, distances = faiss_index.search(request.entities, request.k)
+    neighbours, distances = faiss_index.search(request.entities, request.k + 1)
 
     response = {}
 
