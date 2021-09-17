@@ -14,7 +14,13 @@ def get_labels(entities):
     payload = json.dumps({"uris": entities})
     headers = {"Content-Type": "application/json"}
 
-    return requests.post(API_ENDPOINT, headers=headers, data=payload).json()
+    response = requests.post(API_ENDPOINT, headers=headers, data=payload)
+
+    try:
+        return response.json()
+    except:  # noqa: E722
+        print(response)
+        raise
 
 
 def load_embedding_store():
