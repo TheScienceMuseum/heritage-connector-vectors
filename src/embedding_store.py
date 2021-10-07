@@ -1,4 +1,5 @@
 import os
+import csv
 from typing import Iterable, List
 import numpy as np
 import pandas as pd
@@ -126,6 +127,8 @@ class KGEmbeddingStore:
             index_col=0,
             header=None,
             names=["value"],
+            quoting=csv.QUOTE_NONE,
+            error_bad_lines=False,
         )
         rel_mapping = pd.read_csv(
             os.path.join(mappings_folder, mappings_file_names[1]),
@@ -133,6 +136,8 @@ class KGEmbeddingStore:
             index_col=0,
             header=None,
             names=["value"],
+            quoting=csv.QUOTE_NONE,
+            error_bad_lines=False,
         )
 
         return KGEmbeddingStore(
