@@ -8,12 +8,12 @@ from src.embedding_store import KGEmbeddingStore
 from src.nearest_neighbours import FaissNearestNeighbours
 
 MODEL_FOLDER = os.path.join(
-    os.path.dirname(__file__), "../data/processed/final_model_dglke"
+    os.path.dirname(__file__), "../data/processed/final_model_dglke_vanda"
 )
 embedding_store = KGEmbeddingStore.from_dglke(
     embeddings_folder=MODEL_FOLDER,
     embeddings_file_names=[
-        "heritageconnector_RotatE_entity.npy",
+        "heritageconnector_RotatE_entity_reduced_400.npy",
         "heritageconnector_RotatE_relation.npy",
     ],
     mappings_folder=MODEL_FOLDER,
