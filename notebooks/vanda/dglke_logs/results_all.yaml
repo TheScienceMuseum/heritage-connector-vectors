@@ -1,0 +1,84 @@
+Save model to ./dglke_results/RotatE_heritageconnector_0
+[0]Test average MRR: 0.48045510059946994
+[0]Test average MR: 69.76229654362437
+[0]Test average HITS@1: 0.40976590603036395
+[0]Test average HITS@3: 0.510265823018318
+[0]Test average HITS@10: 0.6140247314406587
+
+Save model to ./dglke_results/RotatE_heritageconnector_1
+[0]Test average MRR: 0.6598704404583517
+[0]Test average MR: 22.968544583617728
+[0]Test average HITS@1: 0.6041831922128552
+[0]Test average HITS@3: 0.6803667287719751
+[0]Test average HITS@10: 0.7719659097197882
+
+Save model to ./dglke_results/RotatE_heritageconnector_2
+[0]Test average MRR: 0.7083499278833665
+[0]Test average MR: 14.706180400548494
+[0]Test average HITS@1: 0.652188750945415
+[0]Test average HITS@3: 0.7326766158141023
+[0]Test average HITS@10: 0.8201036728218561
+
+Save model to ./dglke_results/RotatE_heritageconnector_3
+[0]Test average MRR: 0.43942717419871075
+[0]Test average MR: 77.02295436797088
+[0]Test average HITS@1: 0.37541736612001697
+[0]Test average HITS@3: 0.46186980021767604
+[0]Test average HITS@10: 0.5606356878009187
+
+Save model to ./dglke_results/RotatE_heritageconnector_4
+[0]Test average MRR: 0.5188516956812951
+[0]Test average MR: 23.882596370836332
+[0]Test average HITS@1: 0.42791787341585347
+[0]Test average HITS@3: 0.5555904001180616
+[0]Test average HITS@10: 0.7005109852607501
+
+Save model to ./dglke_results/RotatE_heritageconnector_5
+[0]Test average MRR: 0.6443776380861306
+[0]Test average MR: 23.688707902131874
+[0]Test average HITS@1: 0.5862279941215174
+[0]Test average HITS@3: 0.6664483757309672
+[0]Test average HITS@10: 0.7584902875906215
+
+Save model to ./dglke_results/RotatE_heritageconnector_6
+[0]Test average MRR: 0.5347278602399244
+[0]Test average MR: 23.87690235938682
+[0]Test average HITS@1: 0.44564248249060734
+[0]Test average HITS@3: 0.573302711111931
+[0]Test average HITS@10: 0.7103924932514282
+
+Save model to ./dglke_results/RotatE_heritageconnector_7
+[0]Test average MRR: 0.5711533018855737
+[0]Test average MR: 26.706592386258123
+[0]Test average HITS@1: 0.49417378418097857
+[0]Test average HITS@3: 0.6042416080970564
+[0]Test average HITS@10: 0.7202893738432118
+
+Save model to ./dglke_results/RotatE_heritageconnector_8
+[0]Test average MRR: 0.46077725232059824
+[0]Test average MR: 38.56347346996501
+[0]Test average HITS@1: 0.37875629508015274
+[0]Test average HITS@3: 0.49429676498982333
+[0]Test average HITS@10: 0.6118080023612316
+
+Save model to ./dglke_results/RotatE_heritageconnector_9
+[0]Test average MRR: 0.6647125869433717
+[0]Test average MR: 22.099190171373756
+[0]Test average HITS@1: 0.6087765254232077
+[0]Test average HITS@3: 0.6855718915063305
+[0]Test average HITS@10: 0.7765653919705829
+
+Save model to ./dglke_results/RotatE_heritageconnector_10
+[0]Test average MRR: 0.6980990558525025
+[0]Test average MR: 15.926214589213354
+[0]Test average HITS@1: 0.6410805093865103
+[0]Test average HITS@3: 0.7220787446119034
+[0]Test average HITS@10: 0.8122144539344636
+
+Save model to ./dglke_results/RotatE_heritageconnector_11
+[0]Test average MRR: 0.506336739966904
+[0]Test average MR: 48.16379199025992
+[0]Test average HITS@1: 0.42984559759449537
+[0]Test average HITS@3: 0.5384837696077527
+[0]Test average HITS@10: 0.651699902230257
+
