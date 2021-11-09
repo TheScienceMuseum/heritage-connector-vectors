@@ -6,18 +6,46 @@ from fastapi import FastAPI, HTTPException
 import uvicorn
 from src.embedding_store import KGEmbeddingStore
 from src.nearest_neighbours import FaissNearestNeighbours
+from pathlib import Path
+from dotenv import load_dotenv
 
-MODEL_FOLDER = os.path.join(
-    os.path.dirname(__file__), "../data/processed/final_model_dglke_vanda"
+load_dotenv()
+
+EMBEDDINGS_FILE_NAMES = [
+    Path(os.environ.get("ENTITY_EMBEDDING_PATH")).name,
+    Path(os.environ.get("RELATION_EMBEDDING_PATH")).name,
+]
+
+assert (
+    Path(os.environ.get("ENTITY_EMBEDDING_PATH")).parent
+    == Path(os.environ.get("RELATION_EMBEDDING_PATH")).parent  # noqa: W503
 )
+
+EMBEDDINGS_FOLDER = os.path.join(
+    os.path.dirname(__file__),
+    "..",
+    Path(os.environ.get("ENTITY_EMBEDDING_PATH")).parent,
+)
+
+MAPPINGS_FILE_NAMES = [
+    Path(os.environ.get("ENTITY_MAPPING_PATH")).name,
+    Path(os.environ.get("RELATION_MAPPING_PATH")).name,
+]
+
+assert (
+    Path(os.environ.get("ENTITY_MAPPING_PATH")).parent
+    == Path(os.environ.get("RELATION_MAPPING_PATH")).parent  # noqa: W503
+)
+
+MAPPINGS_FOLDER = os.path.join(
+    os.path.dirname(__file__), "..", Path(os.environ.get("ENTITY_MAPPING_PATH")).parent
+)
+
 embedding_store = KGEmbeddingStore.from_dglke(
-    embeddings_folder=MODEL_FOLDER,
-    embeddings_file_names=[
-        "heritageconnector_RotatE_entity_reduced_400.npy",
-        "heritageconnector_RotatE_relation.npy",
-    ],
-    mappings_folder=MODEL_FOLDER,
-    mappings_file_names=["entities.tsv", "relations.tsv"],
+    embeddings_folder=EMBEDDINGS_FOLDER,
+    embeddings_file_names=EMBEDDINGS_FILE_NAMES,
+    mappings_folder=MAPPINGS_FOLDER,
+    mappings_file_names=MAPPINGS_FILE_NAMES,
 )
 faiss_index = FaissNearestNeighbours(embedding_store).fit("entities")
 
