@@ -9,3 +9,4 @@ faiss-cpu
 uvicorn
 fastapi
 sparqlwrapper
+python-dotenv
