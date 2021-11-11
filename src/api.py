@@ -8,6 +8,9 @@ from src.embedding_store import KGEmbeddingStore
 from src.nearest_neighbours import FaissNearestNeighbours
 from pathlib import Path
 from dotenv import load_dotenv
+from src.cli.log import get_logger
+
+logger = get_logger(__name__)
 
 load_dotenv()
 
@@ -75,6 +78,21 @@ async def get_nearest_neighbours(request: NeighboursRequest):
         )
 
     return response
+
+
+class DistanceRequest(BaseModel):
+    entity_a: str
+    entity_b: str
+
+
+@app.post("/distance")
+async def get_distance(request: DistanceRequest):
+    logger.debug(f"DISTANCES: ent_a {request.entity_a}, ent_b {request.entity_b}")
+
+    if request.entity_a == request.entity_b:
+        return 0
+
+    return embedding_store.get_entity_distance([request.entity_a, request.entity_b])
 
 
 if __name__ == "__main__":

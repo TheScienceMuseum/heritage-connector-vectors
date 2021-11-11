@@ -95,6 +95,13 @@ class KGEmbeddingStore:
         """Convert indexes to relation values."""
         return self._rel_embeddings.iloc[idxs]["value"].tolist()
 
+    def get_entity_distance(self, entity_pair: Iterable[str]) -> float:
+        """Get the L2 distance between the embeddings of the two entities defined by `entity_pair`."""
+
+        embeddings = self.get_entity_embeddings(entity_pair)
+
+        return float(np.linalg.norm(embeddings[0, :] - embeddings[1, :]))
+
     @classmethod
     def from_dglke(
         cls,
